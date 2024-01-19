@@ -84,15 +84,15 @@ class Stone_board:
       self.border = range(self.top, 0) # -4, -3, -2, -1
       self.p_range = range(self.top, self.n)
       self.nbr_offset = ((-1,0),(-1,1),(0,1),(1,0),(1,-1),(0,-1))
-      #   0 1
-      #  5 . 2
-      #   4 3
+      #   1 2
+      #  0 . 3
+      #   5 4
     else:
       self.p_range = range(self.n)
       self.nbr_offset = ((-1,0),(0,1),(1,0),(0,-1))
-      #    0 
-      #  3 . 1
-      #    2
+      #    1 
+      #  0 . 2
+      #    3
     self.stones = [set(), set()]  # start with empty board
 
     ### dictionaries
